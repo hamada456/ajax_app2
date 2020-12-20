@@ -5,8 +5,12 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(content: params[:content])
-    redirect_to action: :index  #メモを保存した後にトップページへリダイレクト
+    post = Post.create(content: params[:content], checked: false)
+    render json:{ post: post }
+    #メモ作成時に未読の情報を保存するようにした、レスポンスをJSONに変更
+
+    #Post.create(content: params[:content])
+    #redirect_to action: :index  #メモを保存した後にトップページへリダイレクト
   end
 
   def checked#「既読」の操作を行ったときに実行されるアクション
