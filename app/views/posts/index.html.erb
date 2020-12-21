@@ -1,7 +1,7 @@
-<h1>AjaxApp</h1>
+<h1>AjaxMemoApp</h1>
 <%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
   <%= form.text_field :content %>
-  <%= form.submit '投稿する' , id: "submit" %>
+  <%= form.submit '投稿' , id: "submit" %>
 <% end %>
 
 <div id="list">
@@ -10,7 +10,7 @@
 <% @posts.each do |post| %>
   <div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
     <div class="post-date">
-      投稿日時：<%= post.created_at %>
+      <%= post.created_at %>
     </div>
     <div class="post-content">
       <%= post.content %>
