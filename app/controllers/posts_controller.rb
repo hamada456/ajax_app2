@@ -1,5 +1,8 @@
 class PostsController < ApplicationController
 
+  def top
+  end
+  
   def index
     @posts = Post.all.order(id: "DESC") #新しいメモが一番上に表示、DESC（降順）
   end
