@@ -10,7 +10,7 @@
 <% @posts.each do |post| %>
   <div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
     <div class="post-date">
-      <%= post.created_at %>
+      <%= post.created_at %><%= link_to '削除', post_path(post.id), method: :delete, class:'post-destroy' %>
     </div>
     <div class="post-content">
       <%= post.content %>
