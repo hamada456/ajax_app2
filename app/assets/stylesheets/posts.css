@@ -10,9 +10,3 @@
 div[data-check="true"] {
   background: #1eda17;
 }
-
-.post-destroy {
-  background-color: rgb(255, 139, 139);
-  color: black;
-  
-}

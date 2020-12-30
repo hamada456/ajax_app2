@@ -7,12 +7,6 @@ class PostsController < ApplicationController
     @posts = Post.all.order(id: "DESC") #新しいメモが一番上に表示、DESC（降順）
   end
 
-  def destroy
-    post = Post.find(params[:id])
-    post.destroy
-    redirect_to index_path
-  end
-
   def create
     post = Post.create(content: params[:content], checked: false)
     render json:{ post: post }
