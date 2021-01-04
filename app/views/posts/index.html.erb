@@ -2,6 +2,7 @@
 <%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
   <%= form.text_field :content %>
   <%= form.submit '投稿' , id: "submit" %>
+  <%= link_to "全て削除", destroy_all_posts_path, method: :delete, class:"post-destroy" ,id:"all-d" %>
 <% end %>
 
 <div id="list">
