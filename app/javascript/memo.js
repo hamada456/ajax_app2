@@ -20,7 +20,7 @@ function memo() {
             ${item.created_at}
           </div>
           <div class="post-content">
-          ${item.content}
+            ${item.content}
           </div>
         </div>`;
       list.insertAdjacentHTML("afterend", HTML);
