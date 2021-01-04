@@ -2,6 +2,7 @@
 <%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
   <%= form.text_field :content %>
   <%= form.submit '投稿' , id: "submit" %>
+  <%= link_to "全て削除", destroy_all_posts_path, method: :delete, class:"post-destroy" ,id:"all-d" %>
 <% end %>
 
 <div id="list">
@@ -10,7 +11,7 @@
 <% @posts.each do |post| %>
   <div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
     <div class="post-date">
-      <%= post.created_at %>
+      <%= post.created_at %><%= link_to '削除', post_path(post.id), method: :delete, class:'post-destroy' %>
     </div>
     <div class="post-content">
       <%= post.content %>
