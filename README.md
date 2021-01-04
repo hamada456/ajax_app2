@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名
+ajax_memo_app
+# アプリケーション概要
+既読機能の付いたメモアプリです
+# 本番環境URL
+heroku:https://ajax-app2.herokuapp.com/
+# テスト用アカウント
+ログイン機能、パスワード等は設置してありませんが
+全世界に公開される物ですのでBasic認証を導入しております（別紙参考）
+# 利用方法
+投稿したメモをクリックすると、文章の色を変えることが出来ます
+投稿の削除を一つ、あるいは全て削除するボタンがあります
+# 目指した課題解決、制作背景
+家族全員分の買い物を良く頼まれまして、
+LINEのアプリを使ってメッセージを受け取っていたのですが
+全員分のメッセージを受信するとごちゃごちゃで見にくかったので
+一カ所にまとめて記述してほしい、買った物とそうでない物をひと目でわかるようにしたい、片手でスマートフォンで操作をしたい
+と思いました。
+# 工夫したポイント
+ページの更新の必要がなく片手で気軽に使えるようにしたいと思い
+覚えたばかりのjavascriptの非同期通信を使いました
+# 使用技術
+Ruby/Ruby on Rails/MySQL/Github/Visual Studio Code/Javascript
+# 実装予定の機能
+UX/UIの改善
+javascriptを使って投稿を全て削除する時にアラートを表示
+スマートフォンの画面だと全体的に小さすぎるので調整
+メモの編集、追加
+部屋番号を使ったチャットルーム作成機能
+railsのgem、deviseを使ったログイン機能の実装
+# データベース設計
+ajax_appER.dio
+を参照してください
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
