@@ -4,7 +4,8 @@ class PostsController < ApplicationController
   end
   
   def index
-    @posts = Post.all.order(id: "DESC") #新しいメモが一番上に表示、DESC（降順）
+    @posts = Post.all.order(id: "DESC")
+    #新しいメモが一番上に表示、DESC（降順）
   end
 
   def destroy #メモを一つ削除
