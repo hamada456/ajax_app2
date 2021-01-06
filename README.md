@@ -5,7 +5,7 @@ ajax_memo_app
 # アプリケーション概要
 既読機能の付いたメモアプリです
 # 本番環境URL
-Herokuにて公開しております
+Herokuにて公開しております. 
 [Heroku](https://ajax-app2.herokuapp.com/)
 # テスト用アカウント
 ログイン機能、パスワード等は設置してありませんが
