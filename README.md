@@ -5,7 +5,8 @@ ajax_memo_app
 # アプリケーション概要
 既読機能の付いたメモアプリです
 # 本番環境URL
-heroku:https://ajax-app2.herokuapp.com/
+Herokuにて公開しております
+[Heroku](https://ajax-app2.herokuapp.com/)
 # テスト用アカウント
 ログイン機能、パスワード等は設置してありませんが
 全世界に公開される物ですのでBasic認証を導入しております（別紙参考）
@@ -32,6 +33,6 @@ javascriptを使って投稿を全て削除する時にアラートを表示
 railsのgem、deviseを使ったログイン機能の実装
 # データベース設計
 ajax_appER.dio
-を参照してください
+
 
 
